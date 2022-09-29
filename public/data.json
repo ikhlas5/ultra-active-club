@@ -5,7 +5,7 @@
     "title":"Dumble",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"40"
+    "time":40
 },
     {
         "id":"02",
@@ -13,7 +13,7 @@
     "title":"Athletics",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"45"
+    "time":45
 },
     {
         "id":"03",
@@ -21,7 +21,7 @@
     "title":"Big circle Dumble",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"30"
+    "time":30
 },
     {
         "id":"04",
@@ -29,7 +29,7 @@
     "title":"Popular place",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"50"
+    "time":50
 },
     {
         "id":"05",
@@ -37,7 +37,7 @@
     "title":"Gym Center",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"60"
+    "time":60
 },
     {
         "id":"06",
@@ -45,7 +45,7 @@
     "title":"Large Dumble",
     "body":"Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint.",
     "age":"20-25",
-    "time":"35"
+    "time":35
 }
 
 ]

@@ -1,5 +1,6 @@
 import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
+import Exercice from '../Exercice/Exercice';
 import Product from '../Product/Product';
 import'./Home.css'
 const Home = () => {
@@ -20,8 +21,8 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <h1>Cart</h1> 
-                </div>
+                <Exercice></Exercice>
+             </div>
         </div>
     );
 };
