@@ -4,14 +4,14 @@ const Product = (props) => {
     console.log(props);
     const{img,body,title,age,time}=props.product;
     return (
-        <div className='product'>
+        <div className='product p-5'>
            <img src={img} alt="" /> 
            <div className='info'>
-            <h4>{title}</h4>
+            <h4 className='text-xl font-semibold'>{title}</h4>
             <p>{body}</p>
             <p>For Age : {age}</p>
-            <p>Time required : {time}</p>
-            <button>Add to list</button>
+            <p className='font-medium'>Time required : {time}m</p>
+            <button className='mt-3'>Add to list</button>
            </div>
         </div>
     );

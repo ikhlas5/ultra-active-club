@@ -9,7 +9,7 @@ const Header = () => {
             </div>
             <div>
 
-            <h1>Our <span className='header-color'>Gym Center</span></h1>
+            <h1 className='text-3xl font-bold'>Our <span className='header-color'>Gym Center</span></h1>
             </div>
         </div>
     );
