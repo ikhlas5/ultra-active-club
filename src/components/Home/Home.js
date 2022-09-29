@@ -2,6 +2,7 @@ import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
 import Exercice from '../Exercice/Exercice';
 import Product from '../Product/Product';
+import Qus from '../Qus/Qus';
 import'./Home.css'
 const Home = () => {
     const[products, setProducts]=useState([]);
@@ -33,6 +34,7 @@ const Home = () => {
             <div>
                 <Exercice addToCart={addToCart} ></Exercice>
              </div>
+             <Qus></Qus>
         </div>
     );
 };

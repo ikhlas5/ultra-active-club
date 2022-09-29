@@ -35,7 +35,7 @@ const Exercice = (props) => {
             </div>
             <div className='flex bg-gray-200 rounded p-2 mt-3 mb-2'>
                 <div className='m-2'>
-                <h3><span className='font-semibold'>75</span>kg</h3>
+                <h3><span className='font-semibold'>55</span>kg</h3>
                 <p> <small>Weight</small> </p>
                 </div>
                 <div className='m-2'>
