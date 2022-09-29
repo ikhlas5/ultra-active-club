@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import'./Product.css'
 const Product = (props) => {
-    console.log(props);
+    // console.log(props)
+    // const[totaTime,setTotalTime]=useState(0);
+    const {product,handleClickBtn}=props;
+    // console.log(product);
     const{img,body,title,age,time}=props.product;
     return (
         <div className='product p-5'>
@@ -11,7 +14,7 @@ const Product = (props) => {
             <p>{body}</p>
             <p>For Age : {age}</p>
             <p className='font-medium'>Time required : {time}m</p>
-            <button className='mt-3'>Add to list</button>
+            <button onClick={()=>handleClickBtn(product)}  className='mt-3'>Add to list</button>
            </div>
         </div>
     );
