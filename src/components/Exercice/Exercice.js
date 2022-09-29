@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import'./Exercice.css'
 import img from'./1607273343467-01-01.jpeg'
+import Swal from 'sweetalert2'
 
 const Exercice = (props) => {
     // console.log(props)
@@ -15,6 +16,13 @@ const Exercice = (props) => {
     }
     const handle=(props)=>{
         setAddTime(props);
+    };
+    const btnSucces=()=>{
+        Swal.fire(
+            'Good job!',
+            'You are success!',
+            'success'
+          )
     }
     return (
         <div className='ml-4 bg-gray-300 p-3 parent-div'>
@@ -59,7 +67,7 @@ const Exercice = (props) => {
                 <h3>Break time:{addTime}</h3>
                 </div>
                 <div className='bg-sky-600 text-xl font-medium text-white text-center mt-10 px-2 py-2 rounded-xl'>
-                <button >Activity Completed</button>
+                <button onClick={btnSucces} >Activity Completed</button>
                 </div>
         </div>
     );

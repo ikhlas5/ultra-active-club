@@ -22,7 +22,7 @@ const Home = () => {
         <div className='home-container'>
             <div className='ml-16'>
                 <h3 className='text-xl font-medium'>Select today’s exercise</h3>
-                <div className='product-container'>
+                <div className='product-container grid grid-cols-1 lg:grid-cols-3'>
                     {
                         products.map(product=><Product product={product} key={product.id}
                             handleClickBtn={handleClickBtn}
