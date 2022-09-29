@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 
 const Exercice = (props) => {
     // console.log(props)
-
+    const{setDataLocalStorage}=props;
     const[addTime,setAddTime]=useState(0);
 
     const{addToCart}=props;
@@ -51,7 +51,7 @@ const Exercice = (props) => {
                 <h1 className='text-xl font-semibold'>Add A Break</h1>
             </div>
             <div className='bg-gray-200 rounded p-2 font-medium mt-3 '>
-                <button onClick={()=>handle('10m')}  className='mr-2 p-1 bg-white border rounded-full'>10m</button>
+                <button onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}  className='mr-2 p-1 bg-white border rounded-full'>10m</button>
                 <button onClick={()=>handle('20m')} className='mr-2 p-1  bg-white border rounded-full'>20m</button>
                 <button onClick={()=>handle('30m')} className='mr-2 p-1 bg-white border rounded-full'>30m</button>
                 <button onClick={()=>handle('40m')} className=' p-1 bg-white border rounded-full'>40m</button>

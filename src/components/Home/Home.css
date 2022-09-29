@@ -2,15 +2,8 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
-.product-container{
+/* .product-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-}
-@media screen  and(min-width: 600px){
-    .product-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-}
+} */
