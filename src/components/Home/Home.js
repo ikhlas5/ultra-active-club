@@ -43,8 +43,8 @@ const Home = () => {
                 </div>
             </div>
           
-            <div>
-                <Exercice addToCart={addToCart} setDataLocalStorage={setDataLocalStorage} ></Exercice>
+            <div className=''>
+                <Exercice addToCart={addToCart} setDataLocalStorage={setDataLocalStorage} local={local} ></Exercice>
              </div>
              <Qus></Qus>
         </div>

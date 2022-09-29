@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import'./Exercice.css'
 import img from'./1607273343467-01-01.jpeg'
-import Swal from 'sweetalert2'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Exercice = (props) => {
-    // console.log(props)
-    const{setDataLocalStorage}=props;
+    console.log(props);
+    const{setDataLocalStorage,local}=props;
     const[addTime,setAddTime]=useState(0);
 
     const{addToCart}=props;
@@ -17,13 +18,10 @@ const Exercice = (props) => {
     const handle=(props)=>{
         setAddTime(props);
     };
-    const btnSucces=()=>{
-        Swal.fire(
-            'Good job!',
-            'You are success!',
-            'success'
-          )
-    }
+
+        const toastify=()=>toast.success('Good job you are complete your Activity',{position: "top-center"})
+    
+ 
     return (
         <div className='ml-4 bg-gray-300 p-3 parent-div'>
             <div className='details-img flex'>
@@ -51,10 +49,10 @@ const Exercice = (props) => {
                 <h1 className='text-xl font-semibold'>Add A Break</h1>
             </div>
             <div className='bg-gray-200 rounded p-2 font-medium mt-3 '>
-                <button onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}  className='mr-2 p-1 bg-white border rounded-full'>10m</button>
-                <button onClick={()=>handle('20m')} className='mr-2 p-1  bg-white border rounded-full'>20m</button>
-                <button onClick={()=>handle('30m')} className='mr-2 p-1 bg-white border rounded-full'>30m</button>
-                <button onClick={()=>handle('40m')} className=' p-1 bg-white border rounded-full'>40m</button>
+                <button  className='mr-2 p-1 bg-white border rounded-full' ><span onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}>10m</span> </button>
+                <button  className='mr-2 p-1 bg-white border rounded-full' ><span onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}>20m</span> </button>
+                <button  className='mr-2 p-1 bg-white border rounded-full' ><span onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}>30m</span> </button>
+                <button  className='mr-2 p-1 bg-white border rounded-full' ><span onClick={(brake)=>setDataLocalStorage(brake.target.innerText)}>40m</span> </button>
                
             </div>
             <div className='m-3 text-xl font-medium'> 
@@ -64,11 +62,12 @@ const Exercice = (props) => {
                 <h3>Exercise time:{totalTime}</h3>
                 </div>
             <div className='bg-gray-200 rounded p-2 font-medium'>
-                <h3>Break time:{addTime}</h3>
+                <h3>Break time: {local}</h3>
                 </div>
                 <div className='bg-sky-600 text-xl font-medium text-white text-center mt-10 px-2 py-2 rounded-xl'>
-                <button onClick={btnSucces} >Activity Completed</button>
+                <button onClick={toastify} >Activity Completed</button>
                 </div>
+                <ToastContainer></ToastContainer>
         </div>
     );
 };
